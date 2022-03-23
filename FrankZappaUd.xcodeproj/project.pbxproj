@@ -16,6 +16,7 @@
 		3E8ACEEC27EAC153009AFFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8ACEEA27EAC153009AFFF6 /* Main.storyboard */; };
 		3E8ACEEE27EAC157009AFFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8ACEED27EAC157009AFFF6 /* Assets.xcassets */; };
 		3E8ACEF127EAC157009AFFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8ACEEF27EAC157009AFFF6 /* LaunchScreen.storyboard */; };
+		3E8ACEF727EAC302009AFFF6 /* FrankZappa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8ACEF627EAC302009AFFF6 /* FrankZappa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		3E8ACEED27EAC157009AFFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E8ACEF027EAC157009AFFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E8ACEF227EAC157009AFFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E8ACEF627EAC302009AFFF6 /* FrankZappa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrankZappa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8ACEC927EAC0EA009AFFF6 /* FrankZappaUd.h */,
+				3E8ACEF627EAC302009AFFF6 /* FrankZappa.swift */,
 			);
 			path = FrankZappaUd;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					3E8ACEC527EAC0EA009AFFF6 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					3E8ACECD27EAC0EA009AFFF6 = {
 						CreatedOnToolsVersion = 13.0;
@@ -259,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8ACEF727EAC302009AFFF6 /* FrankZappa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		3E8ACED927EAC0EA009AFFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -454,6 +460,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		3E8ACEDA27EAC0EA009AFFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -489,6 +497,7 @@
 		3E8ACEDC27EAC0EA009AFFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -509,6 +518,7 @@
 		3E8ACEDD27EAC0EA009AFFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
